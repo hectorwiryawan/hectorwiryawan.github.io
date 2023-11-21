@@ -101,6 +101,9 @@ header{
     transition: all .55s ease;
     cursor: pointer;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -110,9 +113,7 @@ body {
     margin: 0px;
     padding: 0px;
     background: #1A237E;
-}
-body::-webkit-scrollbar{
-    display: none;
+    width: 100%;
 }
 /*ini adalah batas header*/
 
