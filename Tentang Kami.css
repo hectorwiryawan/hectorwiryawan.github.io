@@ -1,0 +1,460 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*ini adalah header*/
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: #fff;
+}
+.navlist{
+    display: flex;
+    margin-right: 15px;
+    position: absolute;
+    right: 0;
+}
+.nav-link{
+    color: black;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.nav-link.active{
+    color: #1A237E;
+}
+.navlist a:hover{
+    border-bottom: 2px solid gray;
+}
+.logo{
+    color: #1A237E;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    top: 15px;
+    position: absolute;
+}
+.line{
+    height: 33px;
+    color: #1A237E;
+    position: absolute;
+    left: 243px;
+    top: 20px;
+}
+.kepanjangan{
+    color: #1A237E;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    left: 253px;
+    top: 25px;
+}
+.hidden{
+    right: -15px;
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    color: black;
+    padding: 10px;
+    z-index: 1;
+    top: 33px;
+    transition: all .55s ease;
+}
+.hidden a{
+    color: black;
+    cursor: default;
+}
+.hidden a:hover{
+    border-bottom: 2px solid transparent;
+}
+.hidden .blue{
+    color: #1A237E;
+    cursor: pointer;
+}
+#tutup{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    padding: 5px;
+    font-size: 35px;
+    background: transparent;
+    color: gray;
+    border: transparent;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #1A237E;
+}
+body::-webkit-scrollbar{
+    display: s;
+}
+/*ini adalah batas header*/
+
+/*ini adalah content 1*/
+.square1{
+    position: absolute;
+    width: 1090px;
+    height: 531px;
+    background: #f5f5f5;
+    top: 95px;
+    left: 25px;
+    z-index: 1;
+}
+.content1 .triangle1 {
+    width: 0;
+    height: 0;
+    border-right: 500px solid transparent;
+    border-bottom: 320px solid #f5f5f5;
+    position: absolute;
+    top: 306px;
+    left: 472px;
+    z-index: 4;
+}
+.content1 .triangle2 {
+    width: 0;
+    height: 0;
+    border-right: 200px solid transparent;
+    border-top: 400px solid #f5f5f5;
+    position: absolute;
+    top: 95px;
+    left: 472px;
+    z-index: 4;
+}
+.content1 .triangle3{
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-bottom: 100px solid #f5f5f5;
+    position: absolute;
+    top: 526px;
+    left: 965px;
+    z-index: 4;
+}
+.content1 .line1{
+    width: 504px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(33deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 515px;
+    top: 350px;
+}
+.content1 .line2{
+    width: 287px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-63deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 513px;
+    top: 350px;
+}
+.content1 .line3{
+    width: 123px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-33deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 1011px;
+    top: 626px;
+}
+.content1 .t1{
+    position: absolute;
+    color: #000;
+    top: 258px;
+    left: 169px;
+    z-index: 2;
+}
+.content1 .folder{
+    width: 58px;
+    height: 57px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 239px;
+    left: 88px;
+    z-index: 2;
+}
+.content1 .p1{
+    color: #000;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 88px;
+    margin-right: 674px;
+    top: 309px;
+    z-index: 5;
+}
+.content1 .lb{
+    width: 593px;
+    height: 531px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 95px;
+    left: 522px;
+    z-index: 2;
+}
+/*batas content 1*/
+
+/*ini adalah content 2*/
+.square2{
+    position: absolute;
+    width: 1090px;
+    height: 531px;
+    background: #f5f5f5;
+    top: 95px;
+    left: 1150px;
+    z-index: 1;
+}
+.content2 .t1{
+    position: absolute;
+    color: #000;
+    top: 258px;
+    left: 1294px;
+    z-index: 2;
+    line-height: normal;
+    font-style: normal;
+    white-space: nowrap;
+}
+.content2 .lampu{
+    width: 58px;
+    height: 57px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 239px;
+    left: 1213px;
+    z-index: 2;
+}
+.content2 .p1{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 1213px;
+    margin-right: 674px;
+    top: 309px;
+    z-index: 5;
+    white-space: nowrap;
+}
+.content2 .im{
+    width: 593px;
+    height: 531px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 95px;
+    left: 1647px;
+    z-index: 2;
+}
+.content2 .triangle1 {
+    width: 0;
+    height: 0;
+    border-right: 500px solid transparent;
+    border-bottom: 320px solid #f5f5f5;
+    position: absolute;
+    top: 306px;
+    left: 1600px;
+    z-index: 4;
+}
+.content2 .triangle2 {
+    width: 0;
+    height: 0;
+    border-right: 200px solid transparent;
+    border-top: 400px solid #f5f5f5;
+    position: absolute;
+    top: 95px;
+    left: 1600px;
+    z-index: 4;
+}
+.content2 .triangle3{
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-bottom: 100px solid #f5f5f5;
+    position: absolute;
+    top: 526px;
+    left: 2090px;
+    z-index: 4;
+}
+.content2 .line1{
+    width: 506px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(33deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 1639px;
+    top: 350px;
+}
+.content2 .line2{
+    width: 292px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-62deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 1638px;
+    top: 350px;
+}
+.content2 .line3{
+    width: 119px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-33deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 2140px;
+    top: 626px;
+}
+/*batas content 2*/
+/*ini adalah content 3*/
+.square3{
+    position: absolute;
+    width: 1090px;
+    height: 531px;
+    background: #f5f5f5;
+    top: 95px;
+    left: 2275px;
+    z-index: 1;
+}
+.content3 .t1{
+    position: absolute;
+    color: #000;
+    top: 258px;
+    left: 2417px;
+    z-index: 2;
+    line-height: normal;
+    font-style: normal;
+    white-space: nowrap;
+}
+.content3 .kunci{
+    width: 84px;
+    height: 81px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 239px;
+    left: 2336px;
+    z-index: 2;
+}
+.content3 .p1{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 2336px;
+    margin-right: 589px;
+    top: 309px;
+    z-index: 5;
+    white-space: nowrap;
+}
+.content3 .s{
+    width: 593px;
+    height: 531px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 95px;
+    left: 2772px;
+    z-index: 2;
+}
+.content3 .triangle1 {
+    width: 0;
+    height: 0;
+    border-right: 500px solid transparent;
+    border-bottom: 320px solid #f5f5f5;
+    position: absolute;
+    top: 306px;
+    left: 2730px;
+    z-index: 4;
+}
+.content3 .triangle2 {
+    width: 0;
+    height: 0;
+    border-right: 200px solid transparent;
+    border-top: 400px solid #f5f5f5;
+    position: absolute;
+    top: 95px;
+    left: 2730px;
+    z-index: 4;
+}
+.content3 .triangle3{
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-bottom: 100px solid #f5f5f5;
+    position: absolute;
+    top: 526px;
+    left: 3215px;
+    z-index: 4;
+}
+.content3 .line1{
+    width: 505px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(33deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 2774px;
+    top: 350px;
+}
+.content3 .line2{
+    width: 300px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-63deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 2772px;
+    top: 350px;
+}
+.content3 .line3{
+    width: 120px;
+    height: 1px;
+    background-color: black;
+    transform: rotate(-33deg);
+    transform-origin: 0% 0%;
+    position: absolute;
+    z-index: 5;
+    left: 3264px;
+    top: 626px;
+}
+/*batas content 3*/

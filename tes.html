@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Card Slider</title>
+  <style>
+    /* Tambahkan gaya CSS sesuai kebutuhan Anda */
+    .swiper-container {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .swiper-slide {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .card {
+      padding: 20px;
+    }
+
+    /* ... tambahkan gaya lainnya */
+  </style>
+</head>
+<body>
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <!-- Isi card-slider dengan swiper-slide -->
+    <div class="swiper-slide">
+      <div class="card">
+        <h3>Card 1</h3>
+        <p>Isi konten card 1.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="card">
+        <h3>Card 2</h3>
+        <p>Isi konten card 2.</p>
+      </div>
+    </div>
+
+    <!-- Tambahkan lebih banyak swiper-slide sesuai kebutuhan -->
+
+</div>
+  <!-- Tambahkan tombol navigasi jika diperlukan -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // Inisialisasi Swiper
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
+</body>
+</html>

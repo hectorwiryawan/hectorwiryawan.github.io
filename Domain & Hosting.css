@@ -1,0 +1,959 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+/*ini adalah header*/
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: #fff;
+}
+.navlist{
+    display: flex;
+    margin-right: 15px;
+    position: absolute;
+    right: 0;
+}
+.nav-link{
+    color: black;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.nav-link.active{
+    color: #1A237E;
+}
+.navlist a:hover{
+    border-bottom: 2px solid gray;
+}
+.logo{
+    color: #1A237E;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: Poppins;
+    font-style: normal;
+    top: 15px;
+    position: absolute;
+}
+.line{
+    height: 33px;
+    color: #1A237E;
+    position: absolute;
+    left: 243px;
+    top: 20px;
+}
+.kepanjangan{
+    color: #1A237E;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    left: 253px;
+    top: 25px;
+}
+.hidden{
+    right: -15px;
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    color: black;
+    padding: 10px;
+    z-index: 1;
+    top: 33px;
+    transition: all .55s ease;
+}
+.hidden a{
+    color: black;
+    cursor: default;
+}
+.hidden a:hover{
+    border-bottom: 2px solid transparent;
+}
+.hidden .blue{
+    color: #1A237E;
+    cursor: pointer;
+}
+#tutup{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    padding: 5px;
+    font-size: 35px;
+    background: transparent;
+    color: gray;
+    border: transparent;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+/*ini adalah batas header*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #1A237E;
+}
+/*ini adalah place*/
+.place .p1{
+    position: absolute;
+    color: #1A237E;
+    font-weight: 700;
+    font-size: 38px;
+    top: 226px;
+    left: 192px;
+    z-index: 2;
+}
+.place .p2{
+    position: absolute;
+    color: #000;
+    font-weight: 700;
+    font-size: 38px;
+    top: 281px;
+    left: 192px;
+    z-index: 2;
+}
+.place .rectangle{
+    position: absolute;
+    width: 1090px;
+    height: 2100px;
+    background: #f5f5f5;
+    top: 155px;
+    left: 125px;
+    z-index: 1;
+}
+.place .square1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #1A237E;
+    left: 192px;
+    top: 336px;
+    z-index: 2;
+}
+.place .square2{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #1A237E;
+    left: 438px;
+    top: 336px;
+    z-index: 2;
+}
+.place .square3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #1A237E;
+    left: 684px;
+    top: 336px;
+    z-index: 2;
+}
+.place .square4{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #1A237E;
+    left: 930px;
+    top: 336px;
+    z-index: 2;
+}
+.place .square5{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #1A237E;
+    left: 192px;
+    top: 577px;
+    z-index: 2;
+}
+.place .square6{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #1A237E;
+    left: 438px;
+    top: 577px;
+    z-index: 2;
+}
+.place .square7{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #1A237E;
+    left: 684px;
+    top: 577px;
+    z-index: 2;
+}
+.place .square8{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #1A237E;
+    left: 930px;
+    top: 577px;
+    z-index: 2;
+}
+.place .p3{
+    position: absolute;
+    left: 192px;
+    top: 817px;
+    z-index: 2;
+    color: #000;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.place .rectangle1{
+    position: absolute;
+    background: #1A237E;
+    width: 190px;
+    height: 300px;
+    left: 192px;
+    z-index: 2;
+    top: 868px;
+}
+.place .rectangle2{
+    position: absolute;
+    background: #1A237E;
+    width: 190px;
+    height: 300px;
+    left: 392px;
+    z-index: 2;
+    top: 868px;
+}
+.place .rectangle3{
+    position: absolute;
+    background: #1A237E;
+    width: 190px;
+    height: 300px;
+    left: 592px;
+    z-index: 2;
+    top: 868px;
+}
+.place .rectangle4{
+    position: absolute;
+    background: #1A237E;
+    width: 190px;
+    height: 300px;
+    left: 792px;
+    z-index: 2;
+    top: 868px;
+}
+.place .rectangle5{
+    position: absolute;
+    background: #1A237E;
+    width: 190px;
+    height: 300px;
+    left: 992px;
+    z-index: 2;
+    top: 868px;
+}
+.place .p4{
+    position: absolute;
+    left: 192px;
+    top: 1197px;
+    z-index: 2;
+    color: #000;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.place .kotak1{
+    position: absolute;
+    background: #1A237E;
+    z-index: 2;
+    top: 1248px;
+    width: 240px;
+    height: 240px;
+    left: 192px;
+}
+.place .kotak2{
+    position: absolute;
+    background: #1A237E;
+    z-index: 2;
+    width: 240px;
+    height: 240px;
+    top: 1248px;
+    left: 437px;
+}
+.place .kotak3{
+    position: absolute;
+    background: #1A237E;
+    z-index: 2;
+    width: 240px;
+    height: 240px;
+    top: 1248px;
+    left: 682px;
+}
+.place .kotak4{
+    position: absolute;
+    background: #1A237E;
+    z-index: 2;
+    width: 240px;
+    height: 240px;
+    top: 1248px;
+    left: 927px;
+}
+.place .kotak5{
+    position: absolute;
+    background: #1A237E;
+    z-index: 2;
+    width: 240px;
+    height: 240px;
+    top: 1493px;
+    left: 192px;
+}
+.place .kotak6{
+    position: absolute;
+    background: #1A237E;
+    z-index: 2;
+    width: 240px;
+    height: 240px;
+    top: 1493px;
+    left: 437px;
+}
+.place .kotak7{
+    position: absolute;
+    background: #1A237E;
+    z-index: 2;
+    width: 240px;
+    height: 240px;
+    top: 1493px;
+    left: 682px;
+}
+.place .kotak8{
+    position: absolute;
+    background: #1A237E;
+    z-index: 2;
+    width: 240px;
+    height: 240px;
+    top: 1493px;
+    left: 927px;
+}
+.place .p5{
+    position: absolute;
+    z-index: 2;
+    left: 422px;
+    top: 1850px;
+    color: #000;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.place .garis{
+    height: 250px;
+    z-index: 2;
+    width: 4px;
+    background-color: #1A237E;
+    position: absolute;
+    left: 680px;
+    top: 1900px;
+}
+.place .p6{
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 2;
+    top: 1930px;
+    left: 380px;
+}
+.place .p7{
+    position: absolute;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 2;
+    top: 1930px;
+    left: 725px;
+}
+/*ini adalah batas place*/
+
+.isi{
+    color: white;
+}
+/*ini adalah isi 1*/
+.isi1 .t1{
+    left: 207px;
+    top: 366px;
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+.isi1 .p1{
+    left: 207px;
+    top: 426px;
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.isi1 .r1{
+    left: 207px;
+    top: 496px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi1 .t2{
+    left: 453px;
+    top: 366px;
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+.isi1 .p2{
+    left: 453px;
+    top: 426px;
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.isi1 .r2{
+    left: 453px;
+    top: 496px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi1 .t3{
+    left: 699px;
+    top: 366px;
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+.isi1 .p3{
+    left: 699px;
+    top: 426px;
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.isi1 .r3{
+    left: 699px;
+    top: 496px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi1 .t4{
+    left: 945px;
+    top: 366px;
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+.isi1 .p4{
+    left: 945px;
+    top: 426px;
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.isi1 .r4{
+    left: 945px;
+    top: 496px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi1 .t5{
+    left: 207px;
+    top: 607px;
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+.isi1 .p5{
+    left: 207px;
+    top: 667px;
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.isi1 .r5{
+    left: 207px;
+    top: 737px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi1 .t6{
+    left: 453px;
+    top: 607px;
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+.isi1 .p6{
+    left: 453px;
+    top: 667px;
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.isi1 .r6{
+    left: 453px;
+    top: 737px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi1 .t7{
+    left: 699px;
+    top: 607px;
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+.isi1 .p7{
+    left: 699px;
+    top: 667px;
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.isi1 .r7{
+    left: 699px;
+    top: 737px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi1 .t8{
+    left: 945px;
+    top: 607px;
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+}
+.isi1 .p8{
+    left: 945px;
+    top: 667px;
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+}
+.isi1 .r8{
+    left: 945px;
+    top: 737px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*ini adalah batas isi 1*/
+
+/*ini adalah isi 2*/
+.isi2 .t1{
+    position: absolute;
+    z-index: 3;
+    font-size: 34px;
+    font-weight: 700;
+    top: 868px;
+    left: 230px;
+}
+.isi2 .line1{
+    width: 172px;
+     border: 1px solid;
+    position: absolute;
+    z-index: 4;
+    top: 913px;
+    left: 200px;
+}
+.isi2 .p1{
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+    top: 948px;
+    left: 202px;
+}
+.isi2 .r1{
+    left: 202px;
+    top: 1100px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi2 .t2{
+    position: absolute;
+    z-index: 3;
+    font-size: 34px;
+    font-weight: 700;
+    top: 868px;
+    left: 415px;
+}
+.isi2 .line2{
+    width: 172px;
+     border: 1px solid;
+    position: absolute;
+    z-index: 4;
+    top: 913px;
+    left: 400px;
+}
+.isi2 .p2{
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+    top: 948px;
+    left: 400px;
+}
+.isi2 .r2{
+    left: 400px;
+    top: 1100px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi2 .t3{
+    position: absolute;
+    z-index: 3;
+    font-size: 34px;
+    font-weight: 700;
+    top: 868px;
+    left: 613px;
+}
+.isi2 .line3{
+    width: 172px;
+     border: 1px solid;
+    position: absolute;
+    z-index: 4;
+    top: 913px;
+    left: 600px;
+}
+.isi2 .p3{
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+    top: 948px;
+    left: 600px;
+}
+.isi2 .r3{
+    left: 600px;
+    top: 1100px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi2 .t4{
+    position: absolute;
+    z-index: 3;
+    font-size: 34px;
+    font-weight: 700;
+    top: 868px;
+    left: 800px;
+}
+.isi2 .line4{
+    width: 172px;
+     border: 1px solid;
+    position: absolute;
+    z-index: 4;
+    top: 913px;
+    left: 800px;
+}
+.isi2 .p4{
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+    top: 948px;
+    left: 800px;
+}
+.isi2 .r4{
+    left: 800px;
+    top: 1100px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+.isi2 .t5{
+    position: absolute;
+    z-index: 3;
+    font-size: 34px;
+    font-weight: 700;
+    top: 868px;
+    left: 1015px;
+}
+.isi2 .line5{
+    width: 172px;
+     border: 1px solid;
+    position: absolute;
+    z-index: 4;
+    top: 913px;
+    left: 1000px;
+}
+.isi2 .p5{
+    position: absolute;
+    z-index: 3;
+    font-size: 16px;
+    font-weight: 400;
+    top: 948px;
+    left: 1000px;
+}
+.isi2 .r5{
+    left: 1000px;
+    top: 1100px;
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*ini adalah batas isi 2*/
+
+/*ini adalah isi 3*/
+.isi3 .t1{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+    top: 1270px;
+    left: 207px;
+}
+.isi3 .p1{
+    left: 207px;
+    top: 1330px;
+    position: absolute;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: 400;
+}
+.isi3 .r1{
+    left: 253px;
+    top: 1450px;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: 700;
+}
+.isi3 .t2{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+    top: 1270px;
+    left: 452px;
+}
+.isi3 .p2{
+    left: 452px;
+    top: 1330px;
+    position: absolute;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: 400;
+}
+.isi3 .r2{
+    left: 498px;
+    top: 1450px;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: 700;
+}
+.isi3 .t3{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+    top: 1270px;
+    left: 702px;
+}
+.isi3 .p3{
+    left: 702px;
+    top: 1330px;
+    position: absolute;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: 400;
+}
+.isi3 .r3{
+    left: 748px;
+    top: 1450px;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: 700;
+}
+.isi3 .t4{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+    top: 1270px;
+    left: 942px;
+}
+.isi3 .p4{
+    left: 942px;
+    top: 1330px;
+    position: absolute;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: 400;
+}
+.isi3 .r4{
+    left: 988px;
+    top: 1450px;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: 700;
+}
+.isi3 .t5{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+    top: 1515px;
+    left: 207px;
+}
+.isi3 .p5{
+    left: 207px;
+    top: 1575px;
+    position: absolute;
+    z-index: 3;
+    font-size: 13px;
+    font-weight: 400;
+}
+.isi3 .r5{
+    left: 253px;
+    top: 1695px;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: 700;
+}
+.isi3 .t6{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+    top: 1515px;
+    left: 452px;
+}
+.isi3 .p6{
+    left: 452px;
+    top: 1575px;
+    position: absolute;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: 400;
+}
+.isi3 .r6{
+    left: 498px;
+    top: 1695px;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: 700;
+}
+.isi3 .t7{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+    top: 1515px;
+    left: 702px;
+}
+.isi3 .p7{
+    left: 702px;
+    top: 1575px;
+    position: absolute;
+    z-index: 3;
+    font-size: 13px;
+    font-weight: 400;
+}
+.isi3 .r7{
+    left: 748px;
+    top: 1695px;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: 700;
+}
+.isi3 .t8{
+    position: absolute;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
+    top: 1515px;
+    left: 942px;
+}
+.isi3 .p8{
+    left: 942px;
+    top: 1575px;
+    position: absolute;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: 400;
+}
+.isi3 .r8{
+    left: 998px;
+    top: 1695px;
+    position: absolute;
+    z-index: 3;
+    font-size: 25px;
+    font-weight: 700;
+}
+footer {
+    position: absolute;
+    bottom: -1750px;
+    left: 0px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.footer-text {
+    color: #1A237E;
+    font-weight: 700;
+}

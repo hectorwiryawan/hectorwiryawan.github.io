@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: #fff;
+}
+.navlist{
+    display: flex;
+    margin-right: 15px;
+    position: absolute;
+    right: 0;
+}
+.nav-link{
+    color: black;
+    margin-left: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.nav-link.active{
+    color: #1A237E;
+}
+.navlist a:hover{
+    border-bottom: 2px solid gray;
+}
+.logo{
+    color: #1A237E;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    top: 15px;
+    position: absolute;
+}
+.line{
+    height: 33px;
+    color: #1A237E;
+    position: absolute;
+    left: 243px;
+    top: 20px;
+}
+.kepanjangan{
+    color: #1A237E;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    left: 253px;
+    top: 25px;
+}
+.hidden{
+    right: -15px;
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    color: black;
+    padding: 10px;
+    z-index: 1;
+    top: 33px;
+    transition: all .55s ease;
+}
+.hidden a{
+    color: black;
+    cursor: default;
+}
+.hidden a:hover{
+    border-bottom: 2px solid transparent;
+}
+.hidden .blue{
+    color: #1A237E;
+    cursor: pointer;
+}
+#tutup{
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    padding: 5px;
+    font-size: 35px;
+    background: transparent;
+    color: gray;
+    border: transparent;
+    transition: all .55s ease;
+    cursor: pointer;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #f5f5f5;
+    overflow-x: hidden;
+}
+.gambarorang{
+    width: 1343.4px;
+    height: 503px;
+    top: 87px;
+    position: absolute;
+}
+.content .p1{
+    color: white;
+    line-height: normal;
+    position: absolute;
+    transform: translate(50%, 365px);
+    border: 1px solid #1A237E;
+    background: #1A237E;
+    padding: 20px;
+}
+.content .tebal{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+}
+.content .tipis{
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+}
+.content2 .hai{
+    width: 468px;
+    height: 340px;
+    top: 817px;
+    left: 70px;
+    position: absolute;
+}
+.content2 h2{
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #1A237E;
+    top: 818px;
+    position: absolute;
+    left: 553px;
+}
+.content2 p{
+    position: absolute;
+    left: 553px;
+    right: 157px;
+    color: black;
+    top: 890px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.content3{
+    color: black;
+}
+.content3 .p1{
+    left: 106px;
+    color: black;
+    position: absolute;
+    top: 1273px;
+    font-size: 38px;
+    font-weight: 700;  
+    font-style: normal;
+    line-height: normal;
+}
+.biru{
+    color: #1A237E;
+}
+.content3 .p2{
+    position: absolute;
+    left: 70px;
+    top: 1374px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 120px;
+}
+.content3 .s1{
+    margin-right: 35px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+}
+.content3 .p3{
+    position: absolute;
+    top: 1469px;
+    left: 161px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 20px;
+}
+.content3 .s2{
+    position: absolute;
+    top: 1494px;
+    left: 70px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 40px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+}
+.content3 .p4{
+    position: absolute;
+    top: 1634px;
+    left: 161px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 20px;
+}
+.content3 .s3{
+    position: absolute;
+    top: 1640px;
+    left: 70px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 40px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+}
+.content3 .p5{
+    position: absolute;
+    top: 1754px;
+    left: 161px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 20px;
+}
+.content3 .s4{
+    position: absolute;
+    top: 1760px;
+    left: 70px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 40px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+}
+.content4 .p1{
+    position: absolute;
+    top: 1910px;
+    color: #000;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 368px;
+    right: 339px;
+}
+.kotak{
+    width: 735px; /* Atur lebar kotak */
+    height: 100px; /* Atur tinggi kotak */
+    border: 2px solid transparent; /* Atur border dengan warna #333 (abu-abu gelap) */
+    margin: 20px; /* Atur margin untuk memberikan jarak dari elemen lain */
+    background-color: #1A237E; /* Atur warna latar belakang kotak */
+    position: absolute;
+    top: 1960px;
+    left: 285px;
+}
+.content5 .p1{
+    position: absolute;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 420px;
+    top: 2018px;
+}
+.content5 .s1{
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 2005px;
+    left: 350px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 40px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+}
+.content5 .p2{
+    position: absolute;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 660px;
+    top: 2018px;
+}
+.content5 .s2{
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 2005px;
+    left: 590px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 40px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+}
+.content5 .p3{
+    position: absolute;
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 890px;
+    top: 2018px;
+}
+.content5 .s3{
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    top: 2005px;
+    left: 820px;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 40px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100%;
+}
+.infopublik{
+    position: absolute;
+    top: 2250px;
+    width: 418px;
+    height: 581px;
+    left: 10px;
+}
+.tabelpasal{
+    position: absolute;
+    top: 2250px;
+    width: 486px;
+    height: 577px;
+    flex-shrink: 0;
+    left: 435px;
+    border: 2px solid black;
+}
+.uupdp{
+    position: absolute;
+    top: 2250px;
+    width: 418px;
+    height: 581px;
+    right: 0;
+}
+footer {
+    position: absolute;
+    bottom: -2280px;
+    left: 0px;
+    width: 100%;
+    background-color: #1A237E;
+    text-align: center;
+    padding: 20px;
+}
+.footer-text {
+    color: white;
+}
