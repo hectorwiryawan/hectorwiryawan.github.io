@@ -112,7 +112,7 @@ body {
     background: #1A237E;
 }
 body::-webkit-scrollbar{
-    display: s;
+    display: none;
 }
 /*ini adalah batas header*/
 
